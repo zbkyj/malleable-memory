@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Malleable Memory",
+    "description": "Three-tier memory and persona plugin: permanent and reinforced tiers are injected in full each turn, the unloaded tier exposes only an index with bodies fetched on demand. Memory is reshaped by conversation; persona and mood change with experience."
+  }
+}

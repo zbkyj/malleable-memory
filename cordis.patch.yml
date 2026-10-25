@@ -1,0 +1,13 @@
+# dsh-malleable-memory — 可塑性记忆（Malleable Memory）
+#
+# DeepSeek-Harness 的三层记忆 + 人格/心情插件。
+#
+# 只挂一行 loader 条目，全部 config 都是可选的，省略即用默认值。
+# 完整配置说明见 README。
+#
+# 注意 patch 语义：本文件是**新增**条目，所以用 `- insert:`。
+# 若要覆盖已有条目，必须**省 insert**、只写 id + 要改的字段，
+# 否则会 duplicate loader entry id，导致整棵插件树加载失败。
+- insert:
+    - id: malleable-memory
+      name: dsh-malleable-memory

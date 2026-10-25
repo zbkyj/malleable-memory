@@ -1,0 +1,51 @@
+# 依赖与构建
+node_modules/
+.pnpm-store/
+dist/
+build/
+*.tsbuildinfo
+
+# 本地数据库（绝对不要提交：里面是真实对话记忆）
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+
+# 日志与临时
+*.log
+tmp/
+.tmp/
+*.tmp
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 环境变量与密钥（绝不能提交）
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.credentials.yaml
+
+# npm 凭据：若开发者在此放发布 token，绝不能被 Git 收进去。
+# （npm 的 files 白名单能挡住它进发布包，但挡不住它进 Git 提交）
+.npmrc
+.yarnrc
+.yarnrc.yml
+
+# npm 打包产物
+*.tgz
+package-lock.json

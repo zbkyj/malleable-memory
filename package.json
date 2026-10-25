@@ -1,0 +1,70 @@
+{
+  "name": "dsh-malleable-memory",
+  "version": "0.1.0",
+  "description": "可塑性记忆（Malleable Memory）— DeepSeek-Harness 的三层记忆与人格插件：永久层/加强层每轮全文注入，卸载层只给目录、正文按需取回；记忆随对话演化，人格与心情随经历改变。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/memory-core.js",
+    "lib/persona-core.js",
+    "lib/event-judge.js",
+    "lib/panel-routes.js",
+    "lib/llm-scorer.js",
+    "lib/embeddings.js",
+    "lib/vector.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "icon.svg",
+    "locale/zh.json",
+    "locale/en.json",
+    "lib/config.js"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "memory",
+    "long-term-memory",
+    "context-budget",
+    "persona",
+    "mood",
+    "ai-companion"
+  ],
+  "license": "MIT",
+  "author": "zbkyj",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbkyj/malleable-memory.git"
+  },
+  "homepage": "https://github.com/zbkyj/malleable-memory#readme",
+  "bugs": {
+    "url": "https://github.com/zbkyj/malleable-memory/issues"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "engines": {
+      "dsh": ">=0.2.1-rc.2"
+    }
+  },
+  "icon": "icon.svg"
+}
