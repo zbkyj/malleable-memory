@@ -1,6 +1,6 @@
 {
   "name": "dsh-malleable-memory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "可塑性记忆（Malleable Memory）— DeepSeek-Harness 的三层记忆与人格插件：永久层/加强层每轮全文注入，卸载层只给目录、正文按需取回；记忆随对话演化，人格与心情随经历改变。",
   "type": "module",
   "main": "lib/index.js",
