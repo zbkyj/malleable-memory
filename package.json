@@ -55,6 +55,14 @@
   "engines": {
     "node": "^22.19.0 || >=24.0.0"
   },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.4"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  },
   "dsh": {
     "bundle": {
       "patch": "cordis.patch.yml"
